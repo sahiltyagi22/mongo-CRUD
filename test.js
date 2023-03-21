@@ -34,3 +34,18 @@ async function findcourse(){
     console.log(details)
 }
 findcourse()
+
+// update of CRUD 
+
+async function update(id){
+    let details = await studentDetails.findById(id)
+    if (!details) return;
+
+    details.name = "tygai"
+    details.rollNo = 21
+
+    let updatedDetails = await details.save()
+    console.log(updatedDetails);
+}
+
+update('64193bca8968c0016554b700')
