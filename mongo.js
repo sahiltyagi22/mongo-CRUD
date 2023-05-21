@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/testDatabase')
+mongoose.connect('mongodb://127.0.0.1/testDatabase');
 .then(()=>
     console.log("connection is successul"))
 .catch(err=> console.error("could not connect to the server . err"))    
